@@ -1,0 +1,825 @@
+.wrap{
+	width: 1000px;
+	margin: 0 auto;
+}
+.top{
+	width: 100%;
+	height: 45px;
+	border-bottom: 1px solid #F2F2F2;
+}
+.top ul{
+	float: left;
+	line-height: 45px;
+}
+.top ul li{
+	float: left;
+	padding-left: 22px;
+	padding-right: 10px;
+	background: url(../images/mc_hbgt.gif) -342px -16px no-repeat;
+}
+.top ul li a{
+	font-size: 14px;
+	color: #000;
+}
+.top ul li a:hover{
+	color: #FF3636;
+}
+.tright,.topbtns{
+	float: right;
+}
+.topbtns a{
+	float: left;
+	width: 60px;
+	color: #fff;
+	line-height: 30px;
+	text-align: center;
+	background-color: #000;
+	margin: 7px 5px;
+	font-size: 14px;
+}
+.topbtns .login:hover{
+	background-color: #ADADAD;
+}
+.tright form{
+	float: right;
+	font-size: 14px;
+	height: 40px;
+	margin-top: 2px;
+	margin-right: 5px;
+	border: 1px solid #fff;
+}
+.tright form input{
+	width: 0px;
+	height: 40px;
+	float: left;
+	margin-right: 2px;
+	padding-left: 14px;
+	transition: 0.2s;
+}
+.tright form:hover input{
+	width: 233px;
+	border: 1px solid #F2F2F2;
+}
+.tright form input:focus{
+	width: 233px;
+}
+.tright form:hover button{
+	background-position: -148px -178px;
+}
+.tright form input:focus+button{
+	background-position: -148px -178px;
+}
+.tright form button{
+	width: 40px;
+	height: 40px;
+	margin: 0 1px;
+	background: url(../images/hpbgw.png) -148px -220px no-repeat;
+}
+.hd{
+	padding: 15px 0;
+	position: relative;
+}
+.hd .hdlogo{
+	width: 520px;
+	height: 69px;
+	position: absolute;
+	left: 50%;
+	margin-left: -260px;
+}
+.hdlogo img{
+	float: left;
+}
+.toTV a{
+	float: left;
+	width: 240px;
+	height: 35px;
+	margin: 17px 0;
+	padding-left: 25px;
+	background: url(../images/channel-arw.png) left -35px no-repeat;
+}
+.toTV a:hover{
+	background-position: 0 -105px;
+}
+.toBeauty a{
+	text-align: right;
+	float: right;
+	width: 240px;
+	height: 35px;
+	margin: 17px 0;
+	padding-right: 25px;
+	background: url(../images/channel-arw.png) right 0 no-repeat;
+}
+
+.toBeauty a:hover{
+	background-position: right -70px;
+}
+.Anav{
+	width: 100%;
+	height: 50px;
+	background-color: #FF3636;
+	position: relative;
+	z-index: 999;
+}
+.Anav ul.wrap li{
+	float: left;
+	text-align: center;
+	font-size: 14px;
+}
+.Anav ul.wrap li a{
+	color: #fff;
+	display: inline-block;
+	line-height: 50px;
+	padding: 0 23px;
+}
+.Anav ul.wrap li a:hover{
+	background-color: #CC1616;
+}
+.Anav ul.wrap li:last-child{
+	padding-left: 1px;
+	background: url(../images/mc_hbgt.gif) -361px 18px no-repeat;
+}
+.Anav ul.wrap li:last-child a{
+	padding-top: 7px;
+	padding-left: 55px;
+	height: 43px;
+	background: url(../images/hpbgw.png) 25px -122px no-repeat;
+}
+.Anav ul.wrap li:last-child a:hover{
+	background: #CC1616 url(../images/hpbgw.png) 25px -1137px no-repeat;
+}
+.fixed{
+	position: fixed;
+	top: 0;
+}
+.hider{
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 100%;
+	height: 293px;
+	min-height: 0;
+	overflow: hidden;
+	background-color: rgba(255,255,255,.9);
+	border-bottom: 3px solid #000;
+	display: none;
+}
+.in-hider{
+	width: 1000px;
+	height: 293px;
+	padding: 0 212px;
+	margin: 0 auto;
+}
+.in-hider .left{
+	height: 100%;
+	width: 170px;
+	float: left;
+}
+.in-hider .left ul.list02 li a{
+	float: left;
+	width: 134px;
+	font-family:  Microsoft yahei;
+	font-size: 14px;
+	padding-left: 36px;
+	line-height: 40px;
+	color: #000;
+}
+.left ul.list02 li a:hover{
+	background-color: #F7F7F7;
+	color: #C80C11;
+}
+.in-hider .right{
+	width: 829px;
+	height: 258px;
+	float: left;
+	margin:18px 0;
+	border-left: 1px solid #000;
+}
+.in-hider .right h2{
+	font-size: 16px;
+	margin-left: 20px;
+	margin-top: -4px;
+}
+.in-hider .right ol li a{
+	float: left;
+	width: 132px;
+	margin-left: 33px;
+	margin-top: 18px;
+}
+.in-hider .right ol li a img{
+	margin-bottom: 6px;
+}
+.in-hider .right ol li a p{
+	line-height: 22px;
+	font-size: 14px;
+	color: #000;
+	text-align: center;
+}
+.in-hider .right ol li a:hover p{
+	color: #C80C11;
+}
+/**********************************/
+.banner{
+	width: 100%;
+	height: 510px;
+	padding-top: 10px;
+}
+.center{
+	width: 1000px;
+	height: 510px;
+	margin: 0 auto;
+	position: relative;
+}
+.banner ul{
+	width: 3000px;
+	height: 510px;
+}
+.banner ul li{
+	width: 1000px;
+	height: 510px;
+	position: absolute;
+	top: 0;
+}
+.banner ul+div{
+	
+}
+.leftcover,.rightcover{
+	width: 1000px;
+	height: 510px;
+	position: absolute;
+	top: 0;
+	background: #333;
+	opacity: 0.9;
+}
+.leftcover{
+	left: -1000px;
+}
+.rightcover{
+	left:1000px;
+}
+#prev,#next{
+	width: 39px;
+	height: 66px;
+	position: absolute;
+	top: 50%;
+	cursor: pointer;
+	margin-top: -33px;
+}
+#prev{
+	left: 0;
+	background: url(../images/luxarr.png) 0 -636px no-repeat;
+}
+#next{
+	right: 0;
+	background: url(../images/luxarr.png) 0 -759px no-repeat;
+}
+.banner .bottom{
+	width: 100%;
+	height: 90px;
+	position: absolute;
+	bottom: 0;
+	background: rgba(0,0,0,.5);
+}
+.banner .bottom a{
+	display: block;
+	font-size: 24px;
+	position: absolute;
+	left: 20px;
+	bottom: 0;
+	line-height: 90px;
+	max-width: 440px;
+	overflow: hidden;
+}
+.banner .bottom a span{
+	color: #fff;
+	max-width: 440px;
+	white-space: nowrap;
+}
+.banner .bottom ol{
+	width: 390px;
+	height: 60px;
+	position: absolute;
+	bottom: 15px;
+	right: 20px;
+}
+.banner .bottom ol li{
+	margin-left: 12px;
+	width: 116px;
+	height: 60px;
+	float: left;
+	border: 1px solid #fff;
+}
+.banner .bottom .current0{
+	border: 1px solid #FC0301;
+}
+
+
+/* 特别策划开始 */
+.out-special{
+	width: 980px;
+	overflow: hidden;
+	margin: 0 auto;
+	padding-top:50px;
+}
+.special .title{
+	width: 100%;
+	height: 57px;
+	background: url(../images/fastit.png) 0 0 no-repeat;
+}
+.special .left{
+	width: 660px;
+	float: left;
+	border-bottom: 3px solid #000;
+}
+.special ul.list-nav{
+	width: 100%;
+}
+.special .list-nav li{
+	height: 20px;
+	margin-bottom: 20px;
+}
+.special .list-nav li a{
+	color: #000;
+	font-size: 16px;
+	white-space: nowrap;
+}
+.special .list-nav li a:hover{
+	color: #FC0301;
+}
+.special .list-nav li span{
+	font-size: 14px;
+	display: inline-block;
+	margin: 0 32px;
+}
+.special ul.list-nav+div{
+	width: 660px;
+	height: 466px;
+	overflow: hidden;
+	position: relative;
+}
+.special ol{
+	width: 4200px;
+	height: 466px;
+	position: absolute;
+	top: 0;
+}
+.special ol li{
+	width: 660px;
+	float: left;
+}
+.special div.pre,.special div.next{
+	position: absolute;
+	cursor: pointer;
+	top: 170px;
+	width: 30px;
+	height: 60px;
+}
+.special div.pre{
+	left: 0;
+	background: url(../img/hpbgw.png) -190px -232px no-repeat;
+}
+.special div.pre:hover{
+	background: url(../img/hpbgw.png) -190px -168px no-repeat;
+}
+.special div.next{
+	right: 0;
+	background: url(../img/hpbgw.png) -224px -232px no-repeat;
+}
+.special div.next:hover{
+	background: url(../img/hpbgw.png) -224px -168px no-repeat;	
+}
+.special .italist{
+	padding:10px 0;
+}
+.special .italist a{
+	color: #000;
+}
+.special .italist a:hover{
+	color: #FC0301;
+}
+.special .italist strong{
+	font-weight: normal;
+}
+.special .italist strong a{
+	font-size: 24px;
+}
+.special .italist em{
+	float: right;
+	min-width: 100px;
+	line-height: 27px;
+	font-size: 16px;
+	padding:0 28px 0 10px ;
+	border: 1px solid #000;
+	background: url(../img/index.gif) right center no-repeat;
+}
+.special .right{
+	width: 300px;
+	height: 514px;
+	float: right;
+}
+.special .right .img01{
+	margin-bottom: 15px;
+}
+/* 	特别策划结束 */
+.ad{
+	padding: 40px 0;
+	text-align: center;
+}
+/* 潮流趋势开始 */
+.main{
+	width: 980px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-bottom: 60px;
+}
+.l-area{
+	width: 695px;
+	float: left;
+}
+.trends,.celeb{
+	width: 100%;
+	overflow: hidden;
+}
+.trends .title{
+	width: 100%;
+	height: 57px;
+	background: url(../images/fastit.png) 0 -78px no-repeat;
+}
+.celeb .title{
+	width: 100%;
+	height: 57px;
+	margin-top: 60px;
+	background: url(../images/fastit.png) 0 -156px no-repeat;
+}
+.l-area ul li{
+	float: left;
+	width: 225px;
+	height: 320px;
+	margin-left: 10px;
+	position: relative;
+}
+.l-area ul,.l-area ol{
+	overflow: hidden;
+}
+.l-area ol{
+	margin-top: 10px;
+}
+.l-area ol li{
+	float: left;
+	width: 342px;
+	height: 250px;
+	margin-left: 10px;
+	position: relative;
+}
+.l-area li.first{
+	margin-left: 0;
+}
+.l-area li a span{
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	width: 205px;
+	color: #000;
+	background: rgba(255,255,255,.9);
+}
+.l-area ol li a span{
+	width: 322px;
+} 
+.l-area li a:hover span{
+	color: #FC0301;
+}
+.r-area{
+	width: 265px;
+	height: 1074px;
+	float: right;
+	background: url(../images/clss_r.png) repeat center top;
+}
+.r-area ul{
+	overflow: hidden;
+	width: 222px;
+	margin: 0 auto;
+}
+.r-area ul li{
+	width: 222px;
+	position: relative;
+	margin-top: 30px;
+}
+.r-area ul li .tag1{
+	width: 222px;
+	height: 50px;
+	background: url(../images/fastit.png) -758px -57px no-repeat;
+}
+.r-area ul li .tag2{
+	width: 222px;
+	height: 50px;
+	background: url(../images/fastit.png) -758px -126px no-repeat;
+}
+.r-area ul li a span{
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	width: 202px;
+	color: #000;
+	background: rgba(255,255,255,.9);
+} 
+.r-area li a:hover span{
+	color: #FC0301;
+}
+.date{
+	height: 255px;
+	margin-top: 40px;
+	background: #fff;
+}
+.ym{
+	width: 100%;
+	line-height: 48px;
+	font-size: 18px;
+	text-align: center;
+	border-bottom: 1px solid #000;
+	position: relative;
+}
+.year,.month{
+	text-align: center;
+}
+.ym .year{
+	width: 44px;
+}
+.ym .month{
+	width: 22px;
+}
+.premonth,.nextmonth{
+	position: absolute;
+	top: 15px;
+	display: block;
+	width: 12px;
+	height: 22px;
+	font: bold 18px "宋体";
+}
+.premonth{
+	left: 10px;
+}
+.nextmonth{
+	right: 10px;
+}
+.date table{
+	margin: 5px;
+}
+.date table thead td{
+	background: url(../images/fastit.png) -752px -323px no-repeat;
+	font-size: 14px;
+	width: 30px;
+	height: 28px;
+	cursor: pointer;
+	margin: 0 2px;
+}
+.date table thead td.mon{
+	background-position: -782px -323px;
+}
+.date table thead td.tue{
+	background-position: -812px -323px;
+}
+.date table thead td.wed{
+	background-position: -842px -323px;
+}
+.date table thead td.thu{
+	background-position: -872px -323px;
+}
+.date table thead td.fri{
+	background-position: -902px -323px;
+}
+.date table thead td.sat{
+	background-position: -932px -323px;
+}
+.r-area .date table tr td{
+	width: 30px;
+	height: 28px;
+	font-size: 14px;
+	color: #999;
+	text-align: center;
+}
+.r-area .date table tr .current{
+	color: #fff;
+	background: url(../images/fastit.png) -703px -324px no-repeat;
+}
+/* 潮流趋势结束 */
+/* 鞋包配饰开始 */
+.accessories{
+	width: 100%;
+	overflow: hidden;
+	background-color: #F0F0F0;
+}
+.headline{
+	width: 100%;
+	height: 97px;
+	background: url(../images/fastit.png) 0 -642px repeat-x;
+}
+.headline a{
+	display: block;
+	width: 367px;
+	height: 97px;
+	margin: 0 auto;
+	background: url(../images/fastit.png) 0 -264px no-repeat;
+}
+.a-cont{
+	width: 980px;
+	overflow: hidden;
+}
+.a-cont ul{
+	padding-bottom: 74px;
+	overflow: hidden;
+}
+.a-cont ul li{
+	float: left;
+	width: 311px;
+	margin-left: 20px;
+}
+.a-cont li.first{
+	margin-left: 0;
+}
+.a-cont ul li a{
+	float: left;
+	position: relative;
+}/* 
+.a-cont ul li a bg{
+	display: block;
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	background: url(../images/accessories_li_bg.jpg) repeat left top;
+}
+.a-cont ul li a:hover bg{
+	display: block;
+	z-index: 0;
+} */
+
+.a-cont ul li a img{
+	border: 1px solid #ccc;
+}
+.a-cont ul li a:hover img{
+	box-shadow: 5px 5px 6px 0 #ddd;
+}
+.a-cont li a span{
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	width: 291px;
+	color: #000;
+	text-align: center;
+	background: rgba(255,255,255,.9);
+}
+.a-cont ol li a span{
+	width: 322px;
+} 
+.a-cont li a:hover span{
+	color: #FC0301;
+}
+/* 鞋包配饰结束 */
+/* 时尚街拍开始 */
+.snap{
+	width: 980px;
+	padding-top: 60px;
+	position: relative;
+	background: #fff url(../images/snap_bg.png) left 115px no-repeat;
+}
+.snap .headline{
+	width: 100%;
+	height: 57px;
+	background: url(../images/fastit.png) 0 -384px no-repeat;
+}
+.snap ul{
+	margin-top: 30px;
+	display: inline-block;
+	overflow: hidden;
+}
+.snap ul li{
+	float: left;
+	background: #fff;
+}
+.snap ul li a{
+	float: left;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.snap ul li a img{
+	width: 100%;
+	height: 100%;
+}
+.snap ul li.bd{
+	border: 4px solid #000;
+	padding: 6px;
+	width: 210px;
+	height: 480px;
+}
+.snap .picexplain{
+	width: 259px;
+	height: 360px;
+	float: right;
+	position: relative;
+}
+.snap .picexplain dl{
+	height: 306pxpx;
+	position: absolute;
+	background-color: #fff;
+	top: 5px;
+	right: 10px;
+	display: none;
+	padding: 50px 0 20px 0;
+}
+.snap .picexplain .show{
+	display: block;
+} 
+.picexplain dl dt{
+	padding-left: 10px;
+}
+ .picexplain em{
+	color: #FC0301;
+	font-size: 14px;
+}
+ .picexplain h3{
+	font-size: 18px;
+	line-height: 20px;
+	padding-top: 8px;
+	color: #000;
+	padding-bottom: 24px;
+}
+ .picexplain h3 a{
+	color: #000;
+}
+ .picexplain h3 a:hover{
+	color: #FC0301; 
+}
+ .picexplain dl dd{
+	margin-left: 12px;
+	padding-top: 10px;
+}
+.picexplain dl dd a.text{
+	line-height: 18px;
+	font-size: 14px;
+	color: #000;
+}
+.picexplain dl dd a.text em{
+	color: #C50C11;
+}
+ .picexplain span.tags{
+	display: block;
+	font-size: 14px;
+	color: #999;
+	margin-top: 2em;
+}
+.picexplain .tags a{
+	color: #999;
+}
+.picexplain .tags a:hover{
+	color: #000;
+}
+.s-btns{
+	width: 220px;
+	height: 45px;
+	position: absolute;
+	top: 490px;
+	right: 22px;
+}
+.s-btns .page{
+	width: 45px;
+	height: 45px;
+	float: left;
+	font-size: 30px;
+}
+.s-btns .sbtn{
+	width: 90px;
+	height: 45px;
+	float: right;
+	cursor: pointer;
+}
+.sbtn .prevbtn{
+	width: 44px;
+	height: 45px;
+	float: left;
+	margin-right: 1px;
+	background: url(../images/luxarr.png) 0 -212px no-repeat;
+}
+
+.sbtn .nextbtn{
+	width: 44px;
+	height: 45px;
+	float: left;
+	background: url(../images/luxarr.png) 0 -284px no-repeat;
+}
+/* 时尚街拍结束 */
+/* 时尚圈开始 */
+/* 时尚圈结束 */
