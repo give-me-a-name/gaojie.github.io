@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>发布房源</title>
+	<link rel="stylesheet" href="../css/reset.css" />
+	<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+	<div class="top">
+		<div class="wrap">
+			<div class="logo">
+				<a href="rent.html"></a>
+			</div>
+			<div class="search">
+				<div class="input">
+					<select name="city">
+						<option value="">-请选择城市-</option>
+						<option value="beijing">北京</option>
+						<option value="shanghai">上海</option>
+						<option value="shenzhen">深圳</option>
+						<option value="zhengzhou" selected>郑州</option>
+						<option value="nanchang">南昌</option>
+						<option value="chongqing">重庆</option>
+						<option value="tianjing">天津</option>
+						<option value="jilin">吉林</option>
+						<option value="jinan">济南</option>
+					</select>
+					<input type="text" placeholder="请输入小区名称/区域/厅室" id="searchHouses" />
+				</div>
+				<a target="_blank"><input type="button" value="搜房源" class="btn" onclick="searchHouses()" /></a>
+			</div>
+			<div class="right"></div>
+		</div>
+	</div>
+	<!-- ***************main content************* -->
+	<div class="wrap">
+		<h1>免费发布房源</h1>
+		<form action="" class="form">
+			<fieldset class="radiobox">
+				<legend><strong>类别和身份</strong></legend>
+				<div class="row">
+					<p><span>*</span>出租方式：</p>
+					<label for="a" class="checked"><input type="radio" id="a" name="renttype" checked="checked" value="整套出租" />整套出租</label>
+					<label for="b"><input type="radio" id="b" name="renttype" value="单间出租" />单间出租</label>
+					<label for="c"><input type="radio" id="c" name="renttype" value="床位出租" />床位出租</label>
+				</div>
+				<div class="row">
+					<p><span>*</span>身份：</p>
+					<label for="d" class="checked"><input type="radio" id="d" name="status" checked="checked" value="个人" />个人</label>
+					<label for="e"><input type="radio" id="e" name="status" value="经纪人" />经纪人</label>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend><strong>基础信息</strong></legend>
+				<div>
+					<p><span>*</span>小区名称：</p>
+					<input type="text" placeholder="请输入小区名称" class="txt01" id="villageName" />
+				</div>
+				<div>
+					<p><span>*</span>房屋户型：</p>
+					<input type="text" value="室" class="txt02" id="shi" required="required" / >
+					<input type="text" value="厅" class="txt02" id="ting" required="required" / >
+					<input type="text" value="卫" class="txt02" id="wei" required="required" / >
+					<input type="text" value="m²" class="txt02" id="area" required="required" / >
+				</div>
+				<div>
+					<p><span>*</span>楼层：</p>
+					<div class="floor">  
+						<label for="floor"><pre>第               层</pre></label>
+						<input type="text" value="" id="floor" required="required" / >						
+					</div>
+					<div class="floor">
+						<label for="countfloor"><pre>共               层</pre></label>
+						<input type="text" value="" id="countfloor" required="required" / >
+					</div>
+					
+				</div>
+				<div>
+					<p><span>*</span>朝向装修：</p>
+					<select name="" id="direction">
+						<option value="东">东</option>
+						<option value="西">西</option>
+						<option value="南" selected>南</option>
+						<option value="北">北</option>
+					</select>
+					<select name="" id="hlevel">
+						<option value="精装修">精装修</option>
+						<option value="家电齐全">家电齐全</option>
+						<option value="简约">简约</option>
+					</select>
+				</div>
+				<div class="price">
+					<p><span>*</span>租金：</p>
+					<label for="price">元/月</label>
+					<input class="txt03" type="text" placeholder="面议" id="price" />
+					<select name="" id="paymethod">
+						<option value="押一付三">押一付三</option>
+						<option value="押一付二">押一付二</option>
+						<option value="年付">年付</option>
+					</select>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend><strong>详细信息</strong></legend>
+				<div>
+					<p><span>*</span>标题：</p>
+					<input type="text" placeholder="8至30个字，不允许特殊字符" class="txt04" id="tittle" />
+				</div>
+				<div class="thisSpace">  
+					<p><span>*</span>房屋配置：</p>
+					<label class="txt07 selected">床<input type="checkbox" name="configure" value="床" checked="checked" /></label>
+					<label class="txt07">衣柜<input type="checkbox" name="configure" value="衣柜" /></label>
+					<label class="txt07 selected">沙发<input type="checkbox" name="configure" value="沙发" checked="checked"/></label>
+					<label class="txt07">书桌<input type="checkbox" name="configure" value="沙发" /></label>
+					<label class="txt07">电视<input type="checkbox" name="configure" value="电视" /></label>
+					<label class="txt07">冰箱<input type="checkbox" name="configure" value="冰箱" /></label>
+					<label class="txt07">微波炉<input type="checkbox" name="configure" value="微波炉"  /></label>
+					<label class="txt07">电磁炉<input type="checkbox" name="configure" value="电磁炉" /></label><p></p>
+					<label class="txt07">洗衣机<input type="checkbox" name="configure" value="洗衣机" /></label>
+					<label class="txt07 selected">空调<input type="checkbox" name="configure" value="空调" checked="checked"/></label>
+					<label class="txt07 selected">热水器<input type="checkbox" name="configure" value="热水器" checked="checked" /></label>
+					<label class="txt07">宽带<input type="checkbox" name="configure" value="宽带" /></label>
+					<label class="txt07">暖气<input type="checkbox" name="configure" value="暖气" /></label>
+				</div>
+				<div>
+					<p><span>*</span>特色：</p>
+					<input type="text" placeholder="请输入4字关键词，不同关键词中间用空格格开" class="txt04" id="features" />
+				</div>
+				<div>
+					<p><span>*</span>地址：</p>
+					<input type="text" placeholder="请正确输入地址" class="txt04" id="address" required="required" />
+				</div>
+				<div class="m0">
+					<div id="pic">
+						<input type="file" name="file" class="file" id="file1" onchange="addFile(this)" required="required" />
+					</div>
+					<label>上传图片</label>
+					<div class="pictures">
+						
+					</div>
+					<i> 只能上传房屋图片，不能包含有文字、数字、网址、名片等，最多上传24张，每张最大10M </i>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend><strong>其他信息</strong></legend>
+				<div>
+					<p><span>*</span>联系人：</p>
+					<input type="text" placeholder="请填写联系人" class="txt05" id="linkman" required="required" />
+				</div>
+				<div>
+					<p><span>*</span>电话：</p>
+					<input type="text" placeholder="请正确填写号码" class="txt06" id="linkphone" required="required" />
+				</div>
+			</fieldset>
+			<input type="button" value="发布" class="submit publish" id="publish" />
+		</form>
+	</div>
+	<div class="cpm">
+		<div id="CPM">
+			<span id="no"><img src="../imgs/no.png" height="17" width="17" alt="" /></span>
+			<p><img src="../imgs/bigfinish.png" height="24" width="24" alt="" />发布房源成功！</p>
+			<a href="publish.html">继续发布</a>
+			<a href="landlord.html" class="back">&nbsp;返回</a>
+		</div>
+	</div>
+	<!-- ***************main content************* -->
+	<!-- footer -->
+	<div class="footer">
+		<div class="wrap">
+			<div class="chaining">
+				友情链接：
+				<a href="javascript:;" target="_blank">武汉租房</a>
+				<a href="javascript:;" target="_blank">厨房电器品牌</a>
+				<a href="javascript:;" target="_blank">房展汇</a>
+				<a href="javascript:;" target="_blank">36搜房网</a>
+				<a href="javascript:;" target="_blank">无锡二手车</a>
+				<a href="javascript:;" target="_blank">合肥房产网</a>
+				<a href="javascript:;" target="_blank">房产论坛</a>
+				<a href="javascript:;" target="_blank">租房问答</a>
+				<a href="javascript:;" target="_blank">郑州租房</a>
+				<a href="javascript:;" target="_blank">郑州房价</a>
+				<a href="javascript:;" target="_blank">好租</a>
+				<a href="javascript:;" target="_blank">郑州租房</a>
+				<a href="javascript:;" target="_blank">密封胶</a>
+				<a href="javascript:;" target="_blank">南山写字楼</a>
+				<a href="javascript:;" target="_blank">罗湖写字楼</a>
+				<a href="javascript:;" target="_blank">上海写字楼出租</a>
+				<a href="javascript:;" target="_blank">广州写字楼出租</a>
+				<a href="javascript:;" target="_blank">北京办公室出租</a>
+				<a href="javascript:;" target="_blank">深圳写字楼出租</a>
+				<a href="javascript:;" target="_blank">房产季</a>
+				<a href="javascript:;" target="_blank">好租</a>
+				<a href="javascript:;" target="_blank">好租</a>
+			</div>
+			<div class="copyright">
+				北京易居房产经纪有限公司 | 网络经营许可证 京ICP备11024601号-12	<br />
+				© Copyright©2010-2016 易居yiju.com版权所有
+			</div>
+			<div class="code">
+				<img src="../imgs/code.png" height="154" width="152" alt="" />
+				微信扫一扫  马上租房
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<script type="text/javascript" src="../js/jquery-1.12.1.min.js"></script>
+	<script type="text/javascript" src="../js/ajaxfileupload.js"></script>
+	<!-- <script type="text/javascript" src="../js/layer.js"></script> -->
+	<script type="text/javascript" src="../js/tanchuang.js"></script>
+	<script type="text/javascript" src="../js/publish.js"></script>
+	
+</body>
+</html>
